@@ -29,7 +29,7 @@ module inst_mem_test;
 	reg clk;
 
 	// Outputs
-	wire [15:0] ins;
+	wire [63:0] ins;
 
 	// Instantiate the Unit Under Test (UUT)
 	Instruction_memory uut (
@@ -44,11 +44,20 @@ module inst_mem_test;
 		clk = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
+		#400;
+		address = 1;
+		#400;
+		address = 0;
+		#60;
+		address = 3;
+		#300;
+		address = 20;
+		
+		
         
 		// Add stimulus here
 
 	end
-      
+   always #30 clk = ~clk;  
 endmodule
 
