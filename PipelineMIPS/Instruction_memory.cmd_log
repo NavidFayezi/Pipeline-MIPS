@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj PipelineMIPS -o "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Instruction_memory.tfi" -lib work "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS//Instruction_memory.v" -module Instruction_memory -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

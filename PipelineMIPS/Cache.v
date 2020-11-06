@@ -28,7 +28,7 @@ initial begin
 
 
 for( i = 0; i<8; i=i+1)
-	cache_reg[0][74]=1;
+	cache_reg[0][74]=0;
 end
 
 always@(data)
@@ -59,7 +59,7 @@ begin
 	else
 		begin
 		hit<= 0;
-		instruction<=64'bx;
+		instruction<=16'bx;
 		end
 
 end

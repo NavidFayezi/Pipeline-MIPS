@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MUX instance_name (
+    .select(select), 
+    .in0(in0), 
+    .in1(in1), 
+    .out(out)
+    );
+
+

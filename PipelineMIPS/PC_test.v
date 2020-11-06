@@ -27,14 +27,15 @@ module PC_test;
 	// Inputs
 	reg [15:0] in;
 	reg clk;
-
+	reg ce;
 	// Outputs
 	wire [15:0] out;
 
 	// Instantiate the Unit Under Test (UUT)
 	PC uut (
 		.in(in), 
-		.clk(clk), 
+		.clk(clk),
+		.ce(ce),
 		.out(out)
 	);
 
@@ -42,16 +43,18 @@ module PC_test;
 		// Initialize Inputs
 		in = 0;
 		clk = 0;
-
+		ce = 0;
 		// Wait 100 ns for global reset to finish
-		#50;
+
+		#60;
+		in = in + 1;
+		
 		#12;
 		in = in + 1;
 		#12;
 		in = in + 1;
 		#12;
-		in = in + 1;
-		#12;
+		ce = 1;
 		in = in + 1;
 		#12;
 		in = in + 1;		

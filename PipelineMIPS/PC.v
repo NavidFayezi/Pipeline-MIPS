@@ -18,13 +18,16 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PC(input [15:0] in, input clk, output reg [15:0] out
+module PC(input [15:0] in, input clk,input ce, output reg [15:0] out
     );
 
-always@(posedge clk)
+initial begin out = 0;
+end
+
+always@(negedge clk)
 begin
-	
-	out <= in; 
+	if(ce)
+		out <= in; 
 
 end
 

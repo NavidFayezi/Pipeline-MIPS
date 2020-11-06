@@ -24,18 +24,16 @@ module Instruction_memory( input  [15:0] address, input clk, output reg [63:0] i
 reg [5:0] counter;
 reg [15:0] temp_address;
 reg [7:0] mem [1023:0];
+integer i;
 
 initial 
 begin
 counter = 0;
-mem[0] = 0;
-mem[1] = 1;
-mem[2] = 2;
-mem[3] = 3;
-mem[4] = 4;
-mem[5] = 5;
-mem[6] = 6;
-mem[7] = 7;
+for ( i =0 ; i<50; i = i+2)
+begin
+mem[i] = i/2;
+mem[i+1] = 0;
+end
 end
 
 
