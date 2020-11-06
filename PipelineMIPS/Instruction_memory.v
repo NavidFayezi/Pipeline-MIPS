@@ -34,13 +34,15 @@ mem[2] = 2;
 mem[3] = 3;
 mem[4] = 4;
 mem[5] = 5;
+mem[6] = 6;
+mem[7] = 7;
 end
 
 
 
 always@(posedge clk)
 begin
-	
+	ins = {64{1'bx}};					// output X if data is not ready
 	if ( temp_address != address)
 		begin
 		counter = 0;
@@ -49,9 +51,12 @@ begin
 	if (counter == 0)
 		temp_address = address;
 	counter = counter + 1;
-	if (counter == 5)
+	if (counter == 5)					// memory has a 5 cycle access time. i used counter to simulate that.
 		begin
-		ins ={mem[{address[15:3],3'b111}],mem[{address[15:3],3'b110}],mem[{address[15:3],3'b101}],mem[{address[15:3],3'b100}],mem[{address[15:3],3'b011}],mem[{address[15:3],3'b010}],mem[{address[15:3],3'b001}],mem[{address[15:3],3'b000}]};
+		ins ={mem[{address[15:3],3'b111}],mem[{address[15:3],3'b110}],
+				mem[{address[15:3],3'b101}],mem[{address[15:3],3'b100}],
+				mem[{address[15:3],3'b011}],mem[{address[15:3],3'b010}],
+				mem[{address[15:3],3'b001}],mem[{address[15:3],3'b000}]};
 		counter = 0;
 		end
 end

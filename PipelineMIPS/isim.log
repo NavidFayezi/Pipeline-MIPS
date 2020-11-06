@@ -1,8 +1,7 @@
 ISim log file
-Running: C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\inst_mem_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/inst_mem_test_isim_beh.wdb 
+Running: C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\Cache_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Cache_test_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
-WARNING: File "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/inst_mem_test.v" Line 32.  For instance inst_mem_test/uut/, width 64 of formal port ins is not equal to width 16 of actual signal ins.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -19,4 +18,13 @@ This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 2.00us
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
