@@ -21,10 +21,9 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/register_file_test.v";
+static const char *ng0 = "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/decode_stage_test.v";
 static int ng1[] = {0, 0};
-static int ng2[] = {7, 0};
-static int ng3[] = {1, 0};
+static unsigned int ng2[] = {10688U, 0U};
 
 
 
@@ -45,47 +44,23 @@ LAB2:    xsi_set_current_line(51, ng0);
 
 LAB4:    xsi_set_current_line(53, ng0);
     t2 = ((char*)((ng1)));
-    t3 = (t0 + 1608);
+    t3 = (t0 + 2248);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
     xsi_set_current_line(54, ng0);
-    t2 = ((char*)((ng1)));
-    t3 = (t0 + 1768);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(55, ng0);
-    t2 = ((char*)((ng1)));
-    t3 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 3);
-    xsi_set_current_line(56, ng0);
     t2 = ((char*)((ng2)));
-    t3 = (t0 + 2088);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 3);
-    xsi_set_current_line(57, ng0);
-    t2 = ((char*)((ng1)));
-    t3 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 3);
-    xsi_set_current_line(58, ng0);
-    t2 = ((char*)((ng1)));
     t3 = (t0 + 2408);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 16);
-    xsi_set_current_line(61, ng0);
+    xsi_set_current_line(57, ng0);
     t2 = (t0 + 3136);
     xsi_process_wait(t2, 100000LL);
     *((char **)t1) = &&LAB5;
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(62, ng0);
-    t2 = ((char*)((ng3)));
-    t3 = (t0 + 1768);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(63, ng0);
-    t2 = ((char*)((ng2)));
-    t3 = (t0 + 2248);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 3);
-    goto LAB1;
+LAB5:    goto LAB1;
 
 }
 
-static void Always_68_1(char *t0)
+static void Always_62_1(char *t0)
 {
     char t3[8];
     char *t1;
@@ -119,14 +94,14 @@ LAB0:    t1 = (t0 + 3576U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(68, ng0);
+LAB2:    xsi_set_current_line(62, ng0);
     t2 = (t0 + 3384);
     xsi_process_wait(t2, 30000LL);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(68, ng0);
-    t4 = (t0 + 1608);
+LAB4:    xsi_set_current_line(62, ng0);
+    t4 = (t0 + 2248);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
     memset(t3, 0, 8);
@@ -159,7 +134,7 @@ LAB9:    t22 = *((unsigned int *)t3);
     *((unsigned int *)t3) = (t22 & 1U);
     t23 = *((unsigned int *)t14);
     *((unsigned int *)t14) = (t23 & 1U);
-    t24 = (t0 + 1608);
+    t24 = (t0 + 2248);
     xsi_vlogvar_assign_value(t24, t3, 0, 0, 1);
     goto LAB2;
 
@@ -177,9 +152,9 @@ LAB10:    t18 = *((unsigned int *)t3);
 }
 
 
-extern void work_m_00000000000631801289_2501769987_init()
+extern void work_m_00000000000498832550_0919993846_init()
 {
-	static char *pe[] = {(void *)Initial_51_0,(void *)Always_68_1};
-	xsi_register_didat("work_m_00000000000631801289_2501769987", "isim/register_file_test_isim_beh.exe.sim/work/m_00000000000631801289_2501769987.didat");
+	static char *pe[] = {(void *)Initial_51_0,(void *)Always_62_1};
+	xsi_register_didat("work_m_00000000000498832550_0919993846", "isim/decode_stage_test_isim_beh.exe.sim/work/m_00000000000498832550_0919993846.didat");
 	xsi_register_executes(pe);
 }

@@ -696,6 +696,6 @@ LAB1:    return;
 extern void work_m_00000000001078235510_0278921292_init()
 {
 	static char *pe[] = {(void *)Initial_28_0,(void *)Always_34_1,(void *)Cont_40_2,(void *)Cont_41_3};
-	xsi_register_didat("work_m_00000000001078235510_0278921292", "isim/register_file_test_isim_beh.exe.sim/work/m_00000000001078235510_0278921292.didat");
+	xsi_register_didat("work_m_00000000001078235510_0278921292", "isim/decode_stage_test_isim_beh.exe.sim/work/m_00000000001078235510_0278921292.didat");
 	xsi_register_executes(pe);
 }
