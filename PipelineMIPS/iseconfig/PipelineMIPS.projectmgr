@@ -9,18 +9,18 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Instruction_memory (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Instruction_memory.v)</SelectedItem>
+         <SelectedItem>ins_mem - Instruction_memory (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Instruction_memory.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Instruction_memory (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Instruction_memory.v)</CurrentItem>
+      <CurrentItem>ins_mem - Instruction_memory (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Instruction_memory.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem/>
@@ -58,7 +58,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
@@ -74,18 +74,18 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Cache_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Cache_test.v</ClosedNode>
+         <ClosedNode>/Fetch_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Fetch_test.v/uut - Fetch_stage</ClosedNode>
          <ClosedNode>/MUX_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MUX_test.v</ClosedNode>
-         <ClosedNode>/PC_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|PC_test.v</ClosedNode>
-         <ClosedNode>/inst_mem_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|inst_mem_test.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>inst_mem_test (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/inst_mem_test.v)</SelectedItem>
+         <SelectedItem>Fetch_test (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Fetch_test.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000f0000000020000000000000000000000000200000064ffffffff000000810000000300000002000000f00000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>inst_mem_test (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/inst_mem_test.v)</CurrentItem>
+      <CurrentItem>Fetch_test (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Fetch_test.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -115,5 +115,5 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>
