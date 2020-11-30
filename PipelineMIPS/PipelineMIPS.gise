@@ -22,17 +22,25 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PipelineMIPS.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Control_Unit_test_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Control_Unit.tfi"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Control_Unit_test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Control_Unit_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Fetch_stage.tfi"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="IFIDreg.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="IFIDreg.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="IFIDreg.tfi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="IFIDreg.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IFIDreg_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MIPS.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MIPS.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MIPS.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MIPS_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MIPS_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MIPS_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX.xst"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="decode.tfi"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decode_stage_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -48,7 +56,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1606763590" xil_pn:in_ck="-471223990613321131" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1606763590">
+    <transform xil_pn:end_ts="1606768545" xil_pn:in_ck="3986006468228889102" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1606768545">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Cache.v"/>
@@ -60,6 +68,8 @@
       <outfile xil_pn:name="IFIDreg.v"/>
       <outfile xil_pn:name="IFIDreg_test.v"/>
       <outfile xil_pn:name="Instruction_memory.v"/>
+      <outfile xil_pn:name="MIPS.v"/>
+      <outfile xil_pn:name="MIPS_test.v"/>
       <outfile xil_pn:name="MUX.v"/>
       <outfile xil_pn:name="MUX_test.v"/>
       <outfile xil_pn:name="PC.v"/>
@@ -70,19 +80,19 @@
       <outfile xil_pn:name="register_file.v"/>
       <outfile xil_pn:name="register_file_test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1606763590" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-259663168445624618" xil_pn:start_ts="1606763590">
+    <transform xil_pn:end_ts="1606768168" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7070729311137456207" xil_pn:start_ts="1606768168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1606763590" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="416919335228033524" xil_pn:start_ts="1606763590">
+    <transform xil_pn:end_ts="1606768168" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5590252061535119123" xil_pn:start_ts="1606768168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1605200004" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5639110421145056282" xil_pn:start_ts="1605200004">
+    <transform xil_pn:end_ts="1606768168" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1973700724006901494" xil_pn:start_ts="1606768168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1606763590" xil_pn:in_ck="-471223990613321131" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1606763590">
+    <transform xil_pn:end_ts="1606768545" xil_pn:in_ck="3986006468228889102" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1606768545">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Cache.v"/>
@@ -94,6 +104,8 @@
       <outfile xil_pn:name="IFIDreg.v"/>
       <outfile xil_pn:name="IFIDreg_test.v"/>
       <outfile xil_pn:name="Instruction_memory.v"/>
+      <outfile xil_pn:name="MIPS.v"/>
+      <outfile xil_pn:name="MIPS_test.v"/>
       <outfile xil_pn:name="MUX.v"/>
       <outfile xil_pn:name="MUX_test.v"/>
       <outfile xil_pn:name="PC.v"/>
@@ -104,20 +116,20 @@
       <outfile xil_pn:name="register_file.v"/>
       <outfile xil_pn:name="register_file_test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1606763592" xil_pn:in_ck="-471223990613321131" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3519973069283849349" xil_pn:start_ts="1606763590">
+    <transform xil_pn:end_ts="1606768547" xil_pn:in_ck="3986006468228889102" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6136861213334313107" xil_pn:start_ts="1606768545">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Control_Unit_test_beh.prj"/>
-      <outfile xil_pn:name="Control_Unit_test_isim_beh.exe"/>
+      <outfile xil_pn:name="MIPS_test_beh.prj"/>
+      <outfile xil_pn:name="MIPS_test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1606763593" xil_pn:in_ck="-6907521037602081875" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2018613025006136898" xil_pn:start_ts="1606763592">
+    <transform xil_pn:end_ts="1606768548" xil_pn:in_ck="754897476352723796" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6405628473800292944" xil_pn:start_ts="1606768547">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Control_Unit_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="MIPS_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

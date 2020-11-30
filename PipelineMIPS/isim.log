@@ -1,7 +1,9 @@
 ISim log file
-Running: C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\Control_Unit_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Control_Unit_test_isim_beh.wdb 
+Running: C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\MIPS_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/MIPS_test_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
+WARNING: File "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/MIPS.v" Line 43.  For instance uut/fetch_stage/, width 16 of formal port branch_target is not equal to width 1 of actual signal branch_target.
+WARNING: File "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/decode.v" Line 33.  For instance decode_stage/reg_file/, width 16 of formal port write_data is not equal to width 3 of actual signal write_data.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -10,6 +12,10 @@ Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
+WARNING: File "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/MIPS.v" Line 43.  For instance uut/fetch_stage/, width 16 of formal port branch_target is not equal to width 1 of actual signal branch_target.
+WARNING: File "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/decode.v" Line 33.  For instance decode_stage/reg_file/, width 16 of formal port write_data is not equal to width 3 of actual signal write_data.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# run 1.00us
+# run 1.00us

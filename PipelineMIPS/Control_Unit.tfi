@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+Control_Unit instance_name (
+    .opCode(opCode), 
+    .regDst(regDst), 
+    .aluSrc(aluSrc), 
+    .memtoReg(memtoReg), 
+    .regWrite(regWrite), 
+    .memRead(memRead), 
+    .memWrite(memWrite), 
+    .branch(branch), 
+    .aluOp(aluOp)
+    );
+
+
