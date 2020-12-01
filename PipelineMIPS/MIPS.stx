@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: MIPS.prj
 
@@ -49,10 +49,18 @@ Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\Pi
 Parsing module <Instruction_memory>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\Cache.v" into library work
 Parsing module <Cache>.
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\ALU_Control.v" into library work
+Parsing module <ALU_Control>.
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\ALU.v" into library work
+Parsing module <ALU>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\IFIDreg.v" into library work
 Parsing module <IFIDreg>.
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\ID_EX_pipline_reg.v" into library work
+Parsing module <ID_EX_pipline_reg>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\Fetch_stage.v" into library work
 Parsing module <Fetch_stage>.
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\Execute_stage.v" into library work
+Parsing module <Execute_stage>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\decode.v" into library work
 Parsing module <decode>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer architecture Lab\PipelineMIPS\Control_Unit.v" into library work
@@ -62,7 +70,7 @@ Parsing module <MIPS>.
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.79 secs
+Total CPU time to Xst completion: 5.45 secs
  
 --> 
 

@@ -31,8 +31,10 @@ begin
 counter = 0;
 for ( i =0 ; i<50; i = i+2)
 begin
-mem[i] = i/2;
-mem[i+1] = 0;
+//mem[i] = i/2;
+//mem[i+1] = 0;
+mem[i] = 8'b10010000;
+mem[i+1] = 8'b00000100;
 end
 end
 

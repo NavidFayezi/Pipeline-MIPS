@@ -2,27 +2,27 @@ Command line:
    IFIDreg_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  1921
+     -socket  6641
 
-Mon Nov 30 20:51:35 2020
+Tue Dec 01 14:34:05 2020
 
 
- Elaboration Time: 0.078125 sec
+ Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5335.43 Meg
+ Current Memory Usage: 5335.42 Meg
 
- Total Signals          : 18
- Total Nets             : 78
- Total Signal Drivers   : 10
+ Total Signals          : 19
+ Total Nets             : 79
+ Total Signal Drivers   : 11
  Total Blocks           : 3
  Total Primitive Blocks : 2
- Total Processes        : 14
- Total Traceable Variables  : 23
- Total Scalar Nets and Variables : 223
+ Total Processes        : 15
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 225
 
- Total Simulation Time: 0.109375 sec
+ Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 5335.43 Meg
+ Current Memory Usage: 5335.42 Meg
 
-Mon Nov 30 20:51:51 2020
+Tue Dec 01 14:34:20 2020
 

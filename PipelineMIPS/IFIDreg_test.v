@@ -28,7 +28,7 @@ module IFIDreg_test;
 	reg clk;
 	reg [15:0] instruction;
 	reg [15:0] pc_plus_2;
-
+	reg en;
 	// Outputs
 	wire [15:0] instruction_out;
 	wire [15:0] pc_plus_2_out;
@@ -36,7 +36,8 @@ module IFIDreg_test;
 	// Instantiate the Unit Under Test (UUT)
 	IFIDreg uut (
 		.clk(clk), 
-		.instruction(instruction), 
+		.instruction(instruction),
+		.en(en),
 		.pc_plus_2(pc_plus_2), 
 		.instruction_out(instruction_out), 
 		.pc_plus_2_out(pc_plus_2_out)
@@ -47,9 +48,10 @@ module IFIDreg_test;
 		clk = 0;
 		instruction = 0;
 		pc_plus_2 = 0;
-
+		en = 0;
 		// Wait 100 ns for global reset to finish
 		#23;
+		en= 1;
 		pc_plus_2 = pc_plus_2 + 2;
 		instruction = instruction +2;
       #23;
@@ -61,6 +63,9 @@ module IFIDreg_test;
       #23;
 		pc_plus_2 = pc_plus_2 + 2;
 		instruction = instruction +2;
+		en = 0;
+		#100;
+		en =1;
               
 		// Add stimulus here
 

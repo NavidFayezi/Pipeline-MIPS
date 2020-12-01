@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+ALU instance_name (
+    .in1(in1), 
+    .in2(in2), 
+    .aluCnt(aluCnt), 
+    .zero(zero), 
+    .aluResult(aluResult)
+    );
+
+

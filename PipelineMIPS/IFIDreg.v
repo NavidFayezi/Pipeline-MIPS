@@ -18,14 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module IFIDreg(input clk, input [15:0] instruction, input [15:0] pc_plus_2,
+module IFIDreg(input clk,input en, input [15:0] instruction, input [15:0] pc_plus_2,
 									output reg [15:0] instruction_out, output reg [15:0] pc_plus_2_out);
 
 always@(negedge clk)
 begin
-	
+	if(en)
+	begin
 	instruction_out <= instruction;
 	pc_plus_2_out <= pc_plus_2;
-	
+	end
 end
 endmodule
