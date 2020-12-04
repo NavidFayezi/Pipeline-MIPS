@@ -1,3 +1,0 @@
-vhdtdtfi -lib work {C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/ALU_Control.v} -lang verilog -prj PipelineMIPS -o ALU_Control.spl -module ALU_Control -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
-spl2sym -intstyle ise -family artix7 ALU_Control.spl {C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/ALU_Control.sym} 
-vhdtdtfi -lang verilog -prj PipelineMIPS -o "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/ALU_Control.tfi" -lib work "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS//ALU_Control.v" -module ALU_Control -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

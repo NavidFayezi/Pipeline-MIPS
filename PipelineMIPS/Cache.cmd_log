@@ -1,1 +1,0 @@
-vhdtdtfi -lang verilog -prj PipelineMIPS -o "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Cache.tfi" -lib work "C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS//Cache.v" -module Cache -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
