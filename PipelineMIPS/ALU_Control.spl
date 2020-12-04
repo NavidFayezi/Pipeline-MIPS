@@ -1,9 +1,0 @@
-[Inputs]
-=aluOp[1:0]=
-=func[3:0]=
-[Outputs]
-=aluCnt[2:0]=
-[BiDir]
-[ATTRIBUTES]
-VeriModel ALU_Control
-

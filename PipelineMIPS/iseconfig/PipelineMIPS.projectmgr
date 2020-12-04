@@ -7,8 +7,11 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Execute_stage C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Execute_stage.v</ClosedNode>
          <ClosedNode>/Fetch_stage C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Fetch_stage.v</ClosedNode>
+         <ClosedNode>/MIPS C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS.v</ClosedNode>
          <ClosedNode>/MIPS C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS.v/decode_stage - decode</ClosedNode>
+         <ClosedNode>/MIPS C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS.v/execute - Execute_stage</ClosedNode>
          <ClosedNode>/MIPS C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS.v/fetch_stage - Fetch_stage</ClosedNode>
          <ClosedNode>/MIPS C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS.v/instance_name - Fetch_stage</ClosedNode>
          <ClosedNode>/MIPS C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS.v/instance_name - decode</ClosedNode>
@@ -19,7 +22,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000013d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000013d0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000009e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000009e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>MIPS (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/MIPS.v)</CurrentItem>
    </ItemView>
@@ -33,7 +36,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000cf000000010000000100000000000000000000000064ffffffff000000810000000000000001000000cf0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -69,23 +72,25 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode></ClosedNode>
          <ClosedNode>/Cache_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Cache_test.v</ClosedNode>
-         <ClosedNode>/Control_Unit_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Control_Unit_test.v</ClosedNode>
+         <ClosedNode>/Ececute_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Ececute_test.v</ClosedNode>
+         <ClosedNode>/Execute_stage C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Execute_stage.v</ClosedNode>
          <ClosedNode>/Fetch_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|Fetch_test.v</ClosedNode>
+         <ClosedNode>/ID_EX_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|ID_EX_test.v</ClosedNode>
          <ClosedNode>/IFIDreg_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|IFIDreg_test.v</ClosedNode>
          <ClosedNode>/MIPS_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS_test.v</ClosedNode>
+         <ClosedNode>/MIPS_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MIPS_test.v/uut - MIPS/execute - Execute_stage</ClosedNode>
          <ClosedNode>/MUX_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|MUX_test.v</ClosedNode>
          <ClosedNode>/PC_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|PC_test.v</ClosedNode>
          <ClosedNode>/decode_stage_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|decode_stage_test.v</ClosedNode>
@@ -93,13 +98,13 @@
          <ClosedNode>/register_file_test C:|Users|Markazi.co|Desktop|Computer architecture Lab|PipelineMIPS|register_file_test.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MIPS_test (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/MIPS_test.v)</SelectedItem>
+         <SelectedItem>uut - ALU_Control (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/ALU_Control.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000008c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000008c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000118000000020000000000000000000000000200000064ffffffff000000810000000300000002000001180000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MIPS_test (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/MIPS_test.v)</CurrentItem>
+      <CurrentItem>uut - ALU_Control (C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/ALU_Control.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -107,13 +112,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000cf000000010000000100000000000000000000000064ffffffff000000810000000000000001000000cf0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -124,7 +129,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012a0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>

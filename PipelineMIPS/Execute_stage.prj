@@ -1,3 +1,0 @@
-verilog work "ALU_Control.v"
-verilog work "ALU.v"
-verilog work "Execute_stage.v"
