@@ -27,7 +27,9 @@ module decode_stage_test;
 	// Inputs
 	reg clk;
 	reg [15:0] instruction;
-
+	reg [15:0] write_data;
+	reg [2:0] write_reg;
+	reg reg_write;
 	// Outputs
 	wire [2:0] opcode;
 	wire [15:0] read_data_1;
@@ -44,18 +46,23 @@ module decode_stage_test;
 		.read_data_1(read_data_1), 
 		.read_data_2(read_data_2), 
 		.sign_extended_imm(sign_extended_imm), 
-		.rt(rt), 
+		.rt(rt),
+		.write_reg(write_reg),
+	   .write_data(write_data),
+	   .reg_write(reg_write),
 		.rd(rd)
 	);
 
 	initial begin
 		// Initialize Inputs
 		clk = 0;
-		instruction = 16'b001_010_011_100_0000;
-
+		instruction = 16'b001_001_011_100_0000;
+		write_reg = 1;
+		write_data = 15;
+		reg_write = 0;
 		// Wait 100 ns for global reset to finish
 		#100;
-        
+      reg_write = 1;  
 		// Add stimulus here
 
 	end

@@ -29,13 +29,16 @@ integer i;
 initial 
 begin
 counter = 0;
-for ( i =0 ; i<50; i = i+2)
-begin
-//mem[i] = i/2;
-//mem[i+1] = 0;
-mem[i] = 8'b10010000;
-mem[i+1] = 8'b00000100;
-end
+mem[0] = 8'b10001000;
+mem[1] = 8'b11100001;
+for (i = 2 ; i < 8 ; i = i + 1)
+	mem[i] = 0;
+mem[8] = 8'b01110000;
+mem[9] = 8'b00001100;
+for (i = 10 ; i < 16 ; i = i + 1)
+	mem[i] = 0;
+mem[16] = 8'b10001010;
+mem[17] = 8'b11001111;
 end
 
 

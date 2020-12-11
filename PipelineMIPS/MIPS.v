@@ -47,17 +47,30 @@ wire [15:0] aluResult;
 wire zero;
 wire [15:0] branch_target;
 
-assign pcSrc = 0; ////////////////////////////////////////
+wire branch_out_pipe_3, memWrite_out_pipe_3, memRead_out_pipe_3,
+		memtoReg_out_pipe_3, regWrite_out_pipe_3, zero_out_pipe_3;
+wire [15:0] branch_target_out_pipe_3, aluResult_out_pipe_3,read_data_2_out_pipe_3;
+wire [2:0] write_reg_ex_out_pipe_3;
+
+wire [15:0] data_mem_read_data;
+
+wire regWrite_out_pipe_4, memtoReg_out_pipe_4; 
+wire [2:0] write_reg_ex_out_pipe_4;
+wire [15:0] data_mem_read_data_out_pipe_4, aluResult_out_pipe_4;
+
+wire [15:0] write_data_reg_file;
+
+assign pcSrc = zero_out_pipe_3 & branch_out_pipe_3;
+assign write_data_reg_file = (memtoReg_out_pipe_4 == 1) ? data_mem_read_data_out_pipe_4 : aluResult_out_pipe_4;
 
 Fetch_stage fetch_stage (
     .clk(clk), 
-    .branch_target(branch_target), 
+    .branch_target(branch_target_out_pipe_3), 
     .pcSrc(pcSrc), 
     .hit(hit), 
     .pc_inc2(pc_plus_2), 
     .instruction(instruction)
     );
-
 
 IFIDreg IF_ID (
     .clk(clk), 
@@ -67,10 +80,6 @@ IFIDreg IF_ID (
     .instruction_out(instruction_out_pipe_1), 
     .pc_plus_2_out(pc_plus_2_out_pipe_1)
     );
-
-
-
-
 
 Control_Unit control_unit (
     .opCode(opCode), 
@@ -84,8 +93,6 @@ Control_Unit control_unit (
     .aluOp(aluOp)
     );
 
-
-
 decode decode_stage (
     .clk(clk), 
     .instruction(instruction_out_pipe_1), 
@@ -93,11 +100,12 @@ decode decode_stage (
     .read_data_1(read_data_1), 
     .read_data_2(read_data_2), 
     .sign_extended_imm(sign_extended_imm), 
-    .rt(rt), 
+    .rt(rt),
+	 .write_reg(write_reg_ex_out_pipe_4),
+	 .write_data(write_data_reg_file),
+	 .reg_write(regWrite_out_pipe_4),
     .rd(rd)
     );
-
-
 
 ID_EX_pipline_reg id_ex (
     .regDst(regDst), 
@@ -146,6 +154,54 @@ Execute_stage execute (
     .zero(zero), 
     .aluResult(aluResult), 
     .write_reg_ex(write_reg_ex)
+    );
+
+EX_MEM_Pipeline_reg ex_mem (
+    .clk(clk), 
+    .en(hit), 
+    .branch_out_pipe_2(branch_out_pipe_2), 
+    .memWrite_out_pipe_2(memWrite_out_pipe_2), 
+    .memRead_out_pipe_2(memRead_out_pipe_2), 
+    .memtoReg_out_pipe_2(memtoReg_out_pipe_2), 
+    .regWrite_out_pipe_2(regWrite_out_pipe_2), 
+    .zero(zero), 
+    .branch_target(branch_target), 
+    .aluResult(aluResult), 
+    .read_data_2_out_pipe_2(read_data_2_out_pipe_2), 
+    .write_reg_ex(write_reg_ex), 
+    .branch_out_pipe_3(branch_out_pipe_3), 
+    .memWrite_out_pipe_3(memWrite_out_pipe_3), 
+    .memRead_out_pipe_3(memRead_out_pipe_3), 
+    .memtoReg_out_pipe_3(memtoReg_out_pipe_3), 
+    .regWrite_out_pipe_3(regWrite_out_pipe_3), 
+    .zero_out_pipe_3(zero_out_pipe_3), 
+    .branch_target_out_pipe_3(branch_target_out_pipe_3), 
+    .aluResult_out_pipe_3(aluResult_out_pipe_3), 
+    .read_data_2_out_pipe_3(read_data_2_out_pipe_3), 
+    .write_reg_ex_out_pipe_3(write_reg_ex_out_pipe_3)
+    );
+
+Data_Memory data_memory (
+    .address(aluResult_out_pipe_3), 
+    .write_data(read_data_2_out_pipe_3), 
+    .memWrite(memWrite_out_pipe_3), 
+    .memRead(memRead_out_pipe_3), 
+    .read_data(data_mem_read_data)
+    );
+
+MEM_WB_Pipeline_reg mem_wb (
+    .clk(clk), 
+    .en(hit), 
+    .regWrite_out_pipe_3(regWrite_out_pipe_3), 
+    .memtoReg_out_pipe_3(memtoReg_out_pipe_3), 
+    .write_reg_ex_out_pipe_3(write_reg_ex_out_pipe_3), 
+    .data_mem_read_data(data_mem_read_data), 
+    .aluResult_out_pipe_3(aluResult_out_pipe_3), 
+    .regWrite_out_pipe_4(regWrite_out_pipe_4), 
+    .memtoReg_out_pipe_4(memtoReg_out_pipe_4), 
+    .write_reg_ex_out_pipe_4(write_reg_ex_out_pipe_4), 
+    .data_mem_read_data_out_pipe_4(data_mem_read_data_out_pipe_4), 
+    .aluResult_out_pipe_4(aluResult_out_pipe_4)
     );
 
 endmodule

@@ -26,6 +26,7 @@ module ID_EX_pipline_reg(input regDst,aluSrc,memtoReg,regWrite,en,
 								pc_plus_2_out_pipe_2,output reg [2:0] rd_out_pipe_2,rt_out_pipe_2
     );
 
+initial begin branch_out_pipe_2 = 0; end
 always@(negedge clk)
 begin 
 	if(en)

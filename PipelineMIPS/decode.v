@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module decode(input clk, input [15:0] instruction, output [2:0] opcode, output [15:0] read_data_1,
+module decode(input clk, reg_write, input [15:0] instruction, write_data, output [2:0] opcode, write_reg, output [15:0] read_data_1,
 					output [15:0] read_data_2, output [15:0] sign_extended_imm, output [2:0] rt, output [2:0] rd
     );
 
@@ -28,9 +28,6 @@ assign opcode = instruction[15:13];
 assign rt = instruction[9:7];
 assign rd = instruction[6:4];
 assign sign_extended_imm = {{9{instruction[6]}},instruction[6:0]};
-
-wire [2:0] write_reg;
-wire [2:0] write_data;
 
 
 
