@@ -21,6 +21,7 @@
 module IFIDreg(input clk,input en, input [15:0] instruction, input [15:0] pc_plus_2,
 									output reg [15:0] instruction_out, output reg [15:0] pc_plus_2_out);
 
+initial begin instruction_out = 0; end
 always@(negedge clk)
 begin
 	if(en)

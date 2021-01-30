@@ -29,15 +29,15 @@ integer i;
 initial 
 begin
 counter = 0;
-mem[0] = 8'b10001000;
+mem[0] = 8'b10001000;				// addi, r3 = r0 + 8
 mem[1] = 8'b11100001;
 for (i = 2 ; i < 8 ; i = i + 1)
 	mem[i] = 0;
-mem[8] = 8'b01110000;
+mem[8] = 8'b01110000;				// add, r7 = r3 + r0
 mem[9] = 8'b00001100;
 for (i = 10 ; i < 16 ; i = i + 1)
 	mem[i] = 0;
-mem[16] = 8'b10001010;
+mem[16] = 8'b10001010;				// beq r3,r7,10
 mem[17] = 8'b11001111; 
 for (i = 18 ; i < 38 ; i = i + 1)
 	mem[i] = 0;
