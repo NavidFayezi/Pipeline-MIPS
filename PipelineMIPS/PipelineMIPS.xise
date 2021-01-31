@@ -16,7 +16,7 @@
 
   <files>
     <file xil_pn:name="PC.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="PC_test.v" xil_pn:type="FILE_VERILOG">
@@ -26,7 +26,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="7"/>
     </file>
     <file xil_pn:name="MUX.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="MUX_test.v" xil_pn:type="FILE_VERILOG">
@@ -36,7 +36,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="19"/>
     </file>
     <file xil_pn:name="Instruction_memory.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="inst_mem_test.v" xil_pn:type="FILE_VERILOG">
@@ -46,7 +46,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="26"/>
     </file>
     <file xil_pn:name="Cache.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Cache_test.v" xil_pn:type="FILE_VERILOG">
@@ -56,7 +56,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="40"/>
     </file>
     <file xil_pn:name="Fetch_stage.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Fetch_test.v" xil_pn:type="FILE_VERILOG">
@@ -66,7 +66,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="57"/>
     </file>
     <file xil_pn:name="register_file.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="register_file_test.v" xil_pn:type="FILE_VERILOG">
@@ -76,7 +76,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="42"/>
     </file>
     <file xil_pn:name="decode.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="decode_stage_test.v" xil_pn:type="FILE_VERILOG">
@@ -86,7 +86,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="60"/>
     </file>
     <file xil_pn:name="IFIDreg.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="IFIDreg_test.v" xil_pn:type="FILE_VERILOG">
@@ -96,7 +96,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="30"/>
     </file>
     <file xil_pn:name="Control_Unit.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Control_Unit_test.v" xil_pn:type="FILE_VERILOG">
@@ -106,17 +106,17 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="41"/>
     </file>
     <file xil_pn:name="MIPS.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="22"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="MIPS_test.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="23"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="53"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="53"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="53"/>
     </file>
     <file xil_pn:name="ALU.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="9"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="11"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ALU_test.v" xil_pn:type="FILE_VERILOG">
@@ -126,7 +126,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="38"/>
     </file>
     <file xil_pn:name="ALU_Control.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ALU_Control_test.v" xil_pn:type="FILE_VERILOG">
@@ -136,7 +136,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="46"/>
     </file>
     <file xil_pn:name="Execute_stage.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Ececute_test.v" xil_pn:type="FILE_VERILOG">
@@ -146,7 +146,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="61"/>
     </file>
     <file xil_pn:name="ID_EX_pipline_reg.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="ID_EX_test.v" xil_pn:type="FILE_VERILOG">
@@ -156,7 +156,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="74"/>
     </file>
     <file xil_pn:name="EX_MEM_Pipeline_reg.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="EX_MEM_Pipeline_reg_test.v" xil_pn:type="FILE_VERILOG">
@@ -166,7 +166,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="36"/>
     </file>
     <file xil_pn:name="Data_Memory.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Data_Memory_test.v" xil_pn:type="FILE_VERILOG">
@@ -176,7 +176,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="48"/>
     </file>
     <file xil_pn:name="MEM_WB_Pipeline_reg.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="12"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="MEM_WB_Pipeline_reg_test.v" xil_pn:type="FILE_VERILOG">
@@ -186,7 +186,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="56"/>
     </file>
     <file xil_pn:name="Booth_algorithm.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Booth_test.v" xil_pn:type="FILE_VERILOG">
@@ -196,8 +196,8 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="42"/>
     </file>
     <file xil_pn:name="Division_module.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="division_test.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -206,7 +206,7 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="54"/>
     </file>
     <file xil_pn:name="clock_divider.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="clock_div_test.v" xil_pn:type="FILE_VERILOG">
@@ -214,6 +214,14 @@
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="69"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="69"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="69"/>
+    </file>
+    <file xil_pn:name="booth_cu.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+    </file>
+    <file xil_pn:name="adder_sub.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
   </files>
 

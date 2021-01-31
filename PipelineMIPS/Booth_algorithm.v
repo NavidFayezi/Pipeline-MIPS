@@ -20,14 +20,25 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Booth_algorithm(input clk, start, input signed [15:0] a, b, output reg ready, output reg signed [31:0] result
     );
-
 reg temp;
 reg [4:0] step = 0;
 parameter [1:0] s0 = 2'b00,
 					 s1 = 2'b01,
 					 s2 = 2'b10;
 reg [1:0] state = s0;
-					 
+wire [15:0] add_sub_res;
+wire [1:0] booth_op;
+adder_sub add_sub (
+    .booth_op(booth_op), 
+    .a(result[31:16]), 
+    .b(b), 
+    .c(add_sub_res)
+    );
+booth_cu instance_name (
+    .L(temp), 
+    .lsb(result[0]), 
+    .booth_op(booth_op)
+    );	 
 always@(posedge clk or negedge start)
 begin
 	if(~start)
@@ -56,29 +67,9 @@ begin
 				else
 					begin
 						step <= step + 1;
-						case({result[0],temp})
-						2'b00:begin
-								result<= result >>> 1;
-								temp <= result[0];
-								end
-								
-						2'b01:begin
-								result[31:16] = result[31:16] + b;
-								temp = result[0];
-								result = result >>> 1;
-								end
-								
-						2'b10:begin
-								result[31:16] = result[31:16] - b;
-								temp = result[0];
-								result = result >>> 1;
-								end
-								
-						2'b11:begin
-								result<= result >>> 1;
-								temp <= result[0];
-								end
-						endcase
+						result[31:16] = add_sub_res;
+						temp = result[0];
+						result = result >>> 1;
 					end
 			end
 		s2: state <= s2;
