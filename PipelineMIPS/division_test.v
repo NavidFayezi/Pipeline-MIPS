@@ -48,8 +48,8 @@ module division_test;
 		// Initialize Inputs
 		clk = 0;
 		start = 0;
-		divisor = 2;
-		dividend = 4;
+		divisor = 7;
+		dividend = 8;
 
 		// Wait 100 ns for global reset to finish
 		#100;
@@ -57,9 +57,6 @@ module division_test;
 		#100;
 		dividend = 51;
 		divisor = 5;
-		#400;
-		divisor = -2;
-		dividend = 4;
 
 	end
    always #10 clk = ~clk;   

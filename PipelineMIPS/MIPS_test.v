@@ -25,16 +25,16 @@
 module MIPS_test;
 
 	// Inputs
-	reg clk;
+	reg clk_20;
 
 	// Instantiate the Unit Under Test (UUT)
 	MIPS uut (
-		.clk(clk)
+		.clk_20(clk_20)
 	);
 
 	initial begin
 		// Initialize Inputs
-		clk = 0;
+		clk_20 = 0;
 
 		// Wait 100 ns for global reset to finish
 		
@@ -42,6 +42,6 @@ module MIPS_test;
 		// Add stimulus here
 
 	end
-   always #20 clk = ~clk;
+   always #1 clk_20 = ~clk_20;
 endmodule
 

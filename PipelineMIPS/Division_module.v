@@ -18,13 +18,13 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Division_module(input clk, start, input signed [15:0] divisor, dividend, output reg ready, output [31:0] result
+module Division_module(input clk, start, input [15:0] divisor, dividend, output reg ready, output [31:0] result
     );
 
 reg [4:0] step;
-reg signed [31:0] remainder;
-reg signed [31:0] divisor_temp;
-reg signed [17:0] quotient;
+reg [31:0] remainder;
+reg [31:0] divisor_temp;
+reg [17:0] quotient;
 
 parameter [1:0] s0 = 2'b00,
 					 s1 = 2'b01;
@@ -54,14 +54,14 @@ begin
 			begin
 			if(remainder < divisor_temp)
 				begin 
-				divisor_temp <= divisor_temp >>> 1;
+				divisor_temp <= divisor_temp >> 1;
 				quotient <= quotient << 1;
 				step <= step + 1;
 				end
 			else
 				begin
 				remainder <= remainder - divisor_temp;
-				divisor_temp <= divisor_temp >>> 1;
+				divisor_temp <= divisor_temp >> 1;
 				quotient <= (quotient << 1) + 1;
 				step <= step + 1;
 				end

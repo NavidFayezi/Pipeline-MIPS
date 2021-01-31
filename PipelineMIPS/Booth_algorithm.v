@@ -24,11 +24,18 @@ module Booth_algorithm(input clk, start, input signed [15:0] a, b, output reg re
 reg temp;
 reg [4:0] step = 0;
 parameter [1:0] s0 = 2'b00,
-					 s1 = 2'b01;
+					 s1 = 2'b01,
+					 s2 = 2'b10;
 reg [1:0] state = s0;
 					 
-always@(posedge clk)
+always@(posedge clk or negedge start)
 begin
+	if(~start)
+		begin
+		state <= s0;
+		end
+	else
+	begin
 	case(state)
 		s0:begin
 				if(start)
@@ -43,7 +50,7 @@ begin
 		s1:begin
 				if(step == 5'b10001)
 					begin
-					state <= s0;
+					state <= s2;
 					ready <= 1;
 					end
 				else
@@ -74,6 +81,8 @@ begin
 						endcase
 					end
 			end
+		s2: state <= s2;
 	endcase
+	end
 end
 endmodule

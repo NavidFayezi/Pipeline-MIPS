@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module MIPS(input clk
+module MIPS(input clk_20
     );
 
 wire pcSrc;
@@ -62,6 +62,16 @@ wire [15:0] write_data_reg_file;
 
 assign pcSrc = zero_out_pipe_3 & branch_out_pipe_3;
 assign write_data_reg_file = (memtoReg_out_pipe_4 == 1) ? data_mem_read_data_out_pipe_4 : aluResult_out_pipe_4;
+
+
+wire clk; 
+
+clock_divider slow_clock (
+    .clk_20(clk_20), 
+    .clk(clk)
+    );
+
+
 
 Fetch_stage fetch_stage (
     .clk(clk), 
@@ -141,6 +151,8 @@ ID_EX_pipline_reg id_ex (
     );
 
 Execute_stage execute (
+	 .clk_20(clk_20),
+	 .clk(clk),
     .aluSrc(aluSrc_out_pipe_2), 
     .aluOp(aluOp_out_pipe_2), 
     .pc_plus_2_out_pipe_2(pc_plus_2_out_pipe_2), 

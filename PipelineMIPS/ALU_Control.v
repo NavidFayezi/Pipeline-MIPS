@@ -18,18 +18,20 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ALU_Control(input [1:0] aluOp, input [3:0] func, output [2:0] aluCnt
+module ALU_Control(input [1:0] aluOp, input [3:0] func, output [3:0] aluCnt
     );
 
-assign aluCnt = aluOp == 2'b00 ? (func == 4'b0000 ? 3'b000 :
-											 func == 4'b0001 ? 3'b001 :
-											 func == 4'b0010 ? 3'b101 :
-											 func == 4'b0011 ? 3'b110 :
-											 func == 4'b0100 ? 3'b111 :
-											 func == 4'b0101 ? 3'b011 :
-											 func == 4'b0110 ? 3'b100 :
-											 3'b010) :
-								aluOp == 2'b01 ? 3'b001 :
-								aluOp == 2'b10 ? 3'b111 :
-								3'b000;
+assign aluCnt = aluOp == 2'b00 ? (func == 4'b0000 ? 4'b0000 :
+											 func == 4'b0001 ? 4'b0001 :
+											 func == 4'b0010 ? 4'b0101 :
+											 func == 4'b0011 ? 4'b0110 :
+											 func == 4'b0100 ? 4'b0111 :
+											 func == 4'b0101 ? 4'b0011 :
+											 func == 4'b0110 ? 4'b0100 :
+											 func == 4'b1000 ? 4'b1100 :		// multiplication
+											 func == 4'b1001 ? 4'b1110 :		// division
+											 4'b0010) :
+								aluOp == 2'b01 ? 4'b0001 :
+								aluOp == 2'b10 ? 4'b0111 :
+								4'b0000;
 endmodule

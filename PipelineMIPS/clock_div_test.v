@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   21:20:24 01/30/2021
-// Design Name:   Booth_algorithm
-// Module Name:   C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/Booth_test.v
+// Create Date:   15:47:43 01/31/2021
+// Design Name:   clock_divider
+// Module Name:   C:/Users/Markazi.co/Desktop/Computer architecture Lab/PipelineMIPS/clock_div_test.v
 // Project Name:  PipelineMIPS
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: Booth_algorithm
+// Verilog Test Fixture created by ISE for module: clock_divider
 //
 // Dependencies:
 // 
@@ -22,45 +22,30 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module Booth_test;
+module clock_div_test;
 
 	// Inputs
-	reg clk;
-	reg [15:0] a;
-	reg [15:0] b;
-	reg start;
+	reg clk_20;
 
 	// Outputs
-	wire ready;
-	wire [31:0] result;
+	wire clk;
 
 	// Instantiate the Unit Under Test (UUT)
-	Booth_algorithm uut (
-		.clk(clk), 
-		.a(a), 
-		.b(b),
-		.start(start),
-		.ready(ready), 
-		.result(result)
+	clock_divider uut (
+		.clk_20(clk_20), 
+		.clk(clk)
 	);
 
 	initial begin
 		// Initialize Inputs
-		clk = 0;
-		a = 4;
-		b = 7;
-		start = 0;
+		clk_20 = 0;
+
 		// Wait 100 ns for global reset to finish
-		#170;
-		start = 1;
-		#400;
-		start = 0;
-		#40;
-		start = 1;
+		#100;
         
 		// Add stimulus here
 
 	end
-	always #10 clk = ~clk;
+   always #10 clk_20 = ~clk_20;   
 endmodule
 
